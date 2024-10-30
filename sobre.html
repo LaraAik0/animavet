@@ -16,6 +16,7 @@
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre</a>
             <a href="somos.html">Quem somos?</a>
+            <a href="#" onclick="alternarTema()">Alternar a porra do tema</a>
         </nav>
     </div>
 </header>
@@ -27,10 +28,33 @@
     <img src="img/a.jpeg" alt="Descrição da imagem" class="imagem-somos"> <!-- Substitua pelo caminho correto da imagem -->
 </div>
 </div> 
+
 </main>
+
 <footer>
     <p>Desenvolvido por Arthur Conde Ferri, Eduardo José de Souza Oliveira e Lara Aiko Sagai</p>
 </footer>
-
+<script>
+         function alternarTema() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+          body.classList.add("light");
+        } else {
+          body.classList.remove("light");
+          body.classList.add("dark");
+        }
+      }
+      function main() {
+        let body = document.querySelector("body");
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          body.classList.add("dark");
+        } else {
+          body.classList.remove("dark");
+          body.classList.add("light");
+        }
+      }
+      main();
+</script>
 </body>
 </html>
