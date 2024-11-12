@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #00c6c7;
+    color: white;
+    padding: 15px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Nova fonte para h1 e navbar */
+@font-face {
+    font-family: 'NovaFonteNavbar'; /* Nome da nova fonte */
+    src: url('fontes/Meowcat.ttf') format('truetype'); /* Ajuste o caminho */
+}
+
+h1 {
+    margin: 0;
+    font-family: 'NovaFonteNavbar', sans-serif; /* Nova fonte no h1 */
+    font-size: 3rem; /* Aumentei o tamanho da fonte do h1 */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    font-family: 'NovaFonteNavbar', sans-serif; /* Nova fonte na navbar */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte da navbar */
+}
+
+nav a:hover {
+    background-color: #009092;
+}
+
+.logo {
+    height: 50px;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: #00c6c7;
+    color: white;
+    text-align: center;
+    padding: 20px 10px 10px; /* Aumente o padding-top */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    display: flex; /* Alinha a imagem e o texto lado a lado */
+    align-items: flex-start; /* Alinha itens no início */
+    margin-bottom: 20px; /* Espaço abaixo do contêiner */
+}
+
+.imagem-esquerda {
+    width: 300px; /* Ajuste a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.conteudo-texto {
+    flex-grow: 1; /* Permite que o texto ocupe o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+h2 {
+    color: #00c6c7;
+    text-align: left; /* Alinha o h2 à esquerda */
+    font-family: 'MinhaFonte', sans-serif; /* Mantém a fonte anterior nos h2 */
+}
+
+.conteudo-texto.centralizado {
+    text-align: center; /* Alinha o texto abaixo do carousel ao centro */
+    margin-top: 20px; /* Adiciona espaço acima */
+}
+
+p {
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    margin: 0; /* Remove a margem do parágrafo */
+}
+
+/* Estilos do Carousel */
+.carousel {
+    display: flex;
+    overflow: hidden; /* Oculta o excesso */
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner {
+    display: flex; /* Exibe os itens em linha */
+    transition: transform 0.5s ease; /* Animação suave */
+    width: 300%; /* Ajusta para três imagens */
+}
+
+.carousel-item {
+    width: 100%; /* Cada item ocupa 100% da tela */
+    flex-shrink: 0; /* Não permite encolher os itens */
+    text-align: center; /* Centraliza o conteúdo do item */
+}
+
+.carousel img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura do item */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'MinhaFonte', sans-serif; /* Fonte do DaFont nos botões */
+}
+
+/* Fonte personalizada */
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('fontes/Lemon Tea.ttf') format('truetype'); /* Ajuste o caminho */
+}
+.centralizar {
+    text-align: center; /* Centraliza o texto */
+}
+.conteudo-texto p:last-child {
+    margin-bottom: 20px; /* Ajuste o valor conforme necessário */
+}
