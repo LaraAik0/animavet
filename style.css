@@ -151,7 +151,8 @@ main {
 h2 {
   color: #8356f4;
   text-align: left;
-  font-family: "MinhaFonte", sans-serif;
+  font-size: 3rem;
+  font-family: "NovaFonteNavbar", sans-serif;
 }
 
 .conteudo-texto.centralizado {
