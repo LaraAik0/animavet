@@ -50,6 +50,15 @@ header {
   src: url("fontes/Meowcat.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "lemon";
+  src: url("fontes/LEMONMILK-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "doll";
+  src: url("fontes/Baby\ Doll.otf") format("truetype");
+}
+
 h1 {
   margin: 0;
   font-family: "NovaFonteNavbar", sans-serif;
@@ -152,7 +161,13 @@ h2 {
   color: #8356f4;
   text-align: left;
   font-size: 3rem;
-  font-family: "NovaFonteNavbar", sans-serif;
+  font-family: "lemon", sans-serif;
+}
+h3 {
+  color: black;
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: "doll", sans-serif;
 }
 
 .conteudo-texto.centralizado {
@@ -172,7 +187,7 @@ p {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 800px;
   margin-bottom: 100px;
   margin-top: 100px;
 }
