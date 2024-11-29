@@ -179,6 +179,7 @@ p {
   line-height: 1.6;
   margin: 20px;
   font-size: 77%;
+  width: 80%;
 }
 
 /* Estilos do Carousel */
@@ -186,10 +187,11 @@ p {
   display: flex;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 75%;
   height: 800px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-top: 50px;
+  
 }
 
 .carousel-inner {
@@ -209,10 +211,10 @@ p {
 }
 
 .carousel img {
-  width: 70%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 10px;
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 10%;
 }
 
 .carousel-controls {
@@ -311,6 +313,16 @@ h1 {
   margin: auto;
   position: relative;
   z-index: 1;
+}
+.p_lindinho{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  border: 2px solid #8356f4; /* Borda de 2px de espessura, com a cor roxa */
+  padding: 10px; /* Adiciona um espaçamento interno ao redor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
 }
 
 h1::after {
