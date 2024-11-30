@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -23,33 +24,6 @@ main {
 
 footer {
   flex-shrink: 0;
-}
-
-body.dark {
-  background-color: black;
-}
-
-body.dark h1 {
-  color: #6448f0;
-}
-body.dark h2 {
-  color: #6448f0;
-}
-body.dark p {
-  color: white;
-}
-
-body.dark header h1 {
-  color: white;
-}
-
-body.dark nav a:hover {
-  background-color: #6448f0 !important;
-}
-
-body.dark header,
-body.dark footer {
-  background-color: #3016eb;
 }
 
 header {
@@ -206,7 +180,7 @@ p {
 }
 
 .referencias ol {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   gap: 16px;
 }
@@ -398,12 +372,40 @@ h1::after {
   width: 60%;
   height: 60%;
   border-radius: 50%;
-} 
+}
 
 .alunos_container > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+/* Estilos para o menu responsivo */
+#menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#theme-toggle {
+  all: unset;
+  background-color: #836aff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* tema escuro */
+
+body.dark {
+  background-color: #1D1F21;
+}
+
+body.dark h1 {
+  color: pink;
 }
 
 /* Media Queries para responsividade */
@@ -451,9 +453,30 @@ h1::after {
   }
   .p_lindinho p {
     font-size: 1rem;
-  } 
+  }
   #aviso_vacina {
     width: 100%;
     font-size: 1.2rem;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #8356f4;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav a {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #menu-toggle {
+    display: block;
   }
 }

@@ -11,12 +11,15 @@
     <header>
       <h1>AnimaVet</h1>
       <div style="display: flex; align-items: center">
-        <nav>
+        <nav id="navbar">
           <a href="index.html">Início</a>
           <a href="sobre.html">Sobre</a>
           <a href="somos.html">Quem somos?</a>
-          <!--  <a href="#" onclick="alternarTema()">Alternar a porra do tema</a>-->
         </nav>
+        <button id="theme-toggle" onclick="alternarTema()">
+          Alternar Tema
+        </button>
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
       </div>
     </header>
 
@@ -67,8 +70,12 @@
           </div>
         </div>
         <div class="carousel-controls">
-          <button class="carousel-button" onclick="moveCarousel(-1)">&#10094;</button>
-          <button class="carousel-button" onclick="moveCarousel(1)">&#10095;</button>
+          <button class="carousel-button" onclick="moveCarousel(-1)">
+            &#10094;
+          </button>
+          <button class="carousel-button" onclick="moveCarousel(1)">
+            &#10095;
+          </button>
         </div>
       </section>
 
@@ -340,23 +347,24 @@
       </p>
     </footer>
 
+    <script src="tema.js"></script>
     <script>
       let currentIndex = 0;
-      let carouselItems = document.querySelectorAll('.carousel-item');
+      let carouselItems = document.querySelectorAll(".carousel-item");
       function moveCarousel(direction) {
         currentIndex += direction;
         updateCarousel();
       }
       function updateCarousel() {
-        if(currentIndex >= carouselItems.length) {
+        if (currentIndex >= carouselItems.length) {
           currentIndex = 0;
         } else if (currentIndex < 0) {
           currentIndex = carouselItems.length - 1;
         }
-        const carouselInner = document.querySelector('.carousel-inner');
+        const carouselInner = document.querySelector(".carousel-inner");
         carouselInner.style.transform = `translateX(${-currentIndex * 100}%)`;
       }
-      document.addEventListener('DOMContentLoaded', updateCarousel);
+      document.addEventListener("DOMContentLoaded", updateCarousel);
     </script>
   </body>
 </html>

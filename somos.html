@@ -12,11 +12,13 @@
 <header>
     <h1>AnimaVet</h1>
     <div style="display: flex; align-items: center;">
-        <nav>
+        <nav id="navbar">
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre</a>
             <a href="somos.html">Quem somos?</a>
         </nav>
+        <button id="theme-toggle" onclick="alternarTema()">Alternar Tema</button>
+        <button id="menu-toggle" onclick="toggleMenu()">☰</button>
     </div>
 </header>
 
@@ -61,6 +63,8 @@
 <footer>
     <p>Desenvolvido por Arthur Conde Ferri, Eduardo José de Souza Oliveira e Lara Aiko Sagai</p>
 </footer>
+
+<script src="tema.js"></script>
 
 </body>
 </html>
