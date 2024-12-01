@@ -405,7 +405,13 @@ body.dark {
   background-color: #282a2c;
 }
 
-body.dark h1,h2,h3 {
+body.dark h1 {
+  color: #5c44ae;
+}
+body.dark h2{
+  color: #5c44ae;
+}
+body.dark h3{
   color: #5c44ae;
 }
 body.dark .branco {
