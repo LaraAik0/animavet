@@ -93,6 +93,7 @@ nav a:hover {
 }
 
 footer {
+  font-size: 1.5rem;
   background-color: #8356f4;
   color: white;
   text-align: center;
@@ -401,13 +402,33 @@ h1::after {
 /* tema escuro */
 
 body.dark {
-  background-color: #1D1F21;
+  background-color: #282a2c;
 }
 
-body.dark h1 {
-  color: pink;
+body.dark h1,h2,h3 {
+  color: #5c44ae;
 }
-
+body.dark .branco {
+  color: white; /* Deixa o h1 com a classe animavet-title branco no tema escuro */
+}
+body.dark header{
+  background-color: #5e42a7;
+}
+body.dark nav a:hover{
+  background-color: #7648bf;
+}
+body.dark p {
+  color: rgb(255, 255, 255);
+}
+body.dark footer{
+  background-color:#5e42a7 ;
+}
+body.dark .referencias{
+  color: #ffffff;
+}
+body.dark .email {
+  color: #7648bf;
+}
 /* Media Queries para responsividade */
 @media (max-width: 1030px) {
   nav a {
